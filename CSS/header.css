@@ -1,0 +1,186 @@
+/* Phần đầu */
+.thong-tin ul {
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    gap: 20%;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    background-image: url(../Ảnh/Khác/pinkblue-background.jpg);
+    clip-path: inset(0 0 12px 0);
+}   
+.task  {
+    margin-left: 0.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18px;
+    margin-bottom: -20px;
+}
+.logo img {
+    height: auto;
+    width: 15%;
+    border-radius: 45%;
+}
+.ten {
+    position: relative;
+}
+.ten h1 {
+    position: absolute;
+    bottom: -60px;
+    right: 10cm;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gio-hang a {
+    position: relative;
+    margin-left: -10%;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 18px;
+    color: gray;
+}
+.gio-hang a:hover {
+    color: black;
+    border: 1px solid black;
+}
+.gio-hang span {
+    display: flex;
+    font-size: 13px;
+    background-color: red;
+    color: white;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 45%;
+    top: 32px;
+    transform: translate(120px);
+}
+.dang-nhap {
+    flex-shrink: 0;          /* không cho flex ép nhỏ lại */
+    white-space: nowrap;     /* chữ ĐĂNG NHẬP luôn nằm trên 1 dòng */
+    margin-right: 40px;      /* cách nút GIỎ HÀNG */
+}
+.dang-nhap a {
+    display: inline-block;   /* để có đủ chiều rộng/cao như nút giỏ hàng */
+    position: relative;
+    margin-left: 0;          /* bỏ margin-left: 10% cũ */
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 18px;
+    color: gray;
+}
+.dang-nhap a:hover {
+    color: black;
+    border: 1px solid black;
+}
+.menu {
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #f0e8e8;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    list-style-type: none;
+    line-height: 40px;
+    font-size: 20px;
+    justify-content: center;
+    gap: 6%;
+    margin-bottom: 9px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.danh-muc {
+    cursor: pointer;
+    position: relative;
+    margin: 5px 0 3px ;
+    color: rgb(242, 242, 242);
+    background-color: rgb(133, 174, 209);
+    padding: 1px 20px;
+    font-weight: bold;
+}
+.danh-muc:hover {
+    background-color: rgb(242, 242, 242);
+    color:  rgb(133, 174, 209);
+    border: 1px solid rgb(133, 174, 209);
+}
+.ds-sp {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    background-color: white;
+    padding-left: 5px;
+    border: 1px solid rgb(133, 174, 209);
+    width: 250px;
+}
+.menu .ds-sp a {
+    color: gray;
+    background-color: #fff;
+}
+.menu .ds-sp a:hover {
+    color: black;
+}
+.danh-muc:hover .ds-sp {
+    display: block;
+}
+.menu a {
+    text-decoration: none;
+    margin: 5px 0 3px ;
+    color: rgb(242, 242, 242);
+    background-color: rgb(133, 174, 209);
+    padding: 1px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.menu>a:hover {
+    background-color: rgb(242, 242, 242);
+    color:  rgb(133, 174, 209);
+    border: 1px solid rgb(133, 174, 209);
+}
+.task-menu {
+    position: sticky;
+    top: 0;
+    background-color: #fff; 
+}
+.hoa-2 {
+    position: fixed;
+    top: 0;
+}
+.hoa-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.zalo {
+    width: 3%;
+    height: auto;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    border: 3px solid white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+.fb {
+    width: 3%;
+    height: auto;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    border: 3px solid white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+

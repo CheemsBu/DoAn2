@@ -1,0 +1,32 @@
+/* Phần cuối (footer) */
+.phan-cuoi {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../Ảnh/Khác/Nền.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+.phan-cuoi img {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+}
+.trai {
+    width: 30%;
+    margin-left: 20%;
+    text-align: left;
+    color: #f0e8e8;
+}
+.phai {
+    width: 70%;
+    color: #fff;
+    text-align: center;
+}
+.ban-quyen {
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+}

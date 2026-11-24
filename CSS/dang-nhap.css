@@ -1,0 +1,105 @@
+/* Căn khung đăng nhập ra giữa màn hình, nằm trên ảnh nền */
+/* Khung đăng nhập nằm giữa header và footer */
+.login {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 16px 60px;     /* ghi đè padding 9cm / 10cm của style.css */
+  background: none;            /* bỏ url(../Ảnh) bị lỗi trong style.css */
+  text-shadow: none;           /* bỏ bóng chữ kế thừa */
+  font-size: 16px;
+}
+
+/* Khi cuộn, khung đăng nhập chui xuống dưới header */
+.task-menu { z-index: 100; }
+.hoa-1, .hoa-2 { z-index: 101; }
+.zalo, .fb { z-index: 101; }
+
+
+/* Khung trong suốt */
+.box {
+  pointer-events: auto;
+  box-sizing: border-box;
+  width: 560px;
+  max-width: 92vw;
+  padding: 34px 55px 50px;
+  background: url(../Ảnh/Khác/pinkblue-background.jpg) center / cover no-repeat;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 14px;
+  box-shadow: 0 25px 40px rgba(0, 60, 120, .25);
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  color: #fff;
+}
+.box * { box-sizing: border-box; }
+
+/* Ô nhập */
+.field { position: relative; margin-bottom: 22px; }
+
+.box input {
+  width: 100%;
+  height: 59px;
+  padding: 0 28px;
+  border: 0;
+  border-radius: 30px;
+  outline: none;
+  background: rgba(255, 255, 255, .38);
+  color: #fff;
+  font: 700 19px "Roboto Condensed", Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.box input::placeholder { color: rgba(0, 0, 0, .45); font-weight: 400; }
+.box input:focus-visible { box-shadow: 0 0 0 3px rgba(255, 255, 255, .7); }
+
+.eye {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, .4);
+  display: flex;
+  cursor: pointer;
+}
+
+/* Nút */
+.btn {
+  display: block;
+  width: 100%;
+  height: 59px;
+  margin-bottom: 22px;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, .38);
+  color: #fff;
+  font: 700 20px "Roboto Condensed", Arial, sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 59px;
+  transition: background .2s;
+}
+.btn:hover { background: rgba(255, 255, 255, .55); }
+.btn:focus-visible { outline: 3px solid #fff; }
+.btn.last { margin-bottom: 0; }
+
+.forgot {
+  display: inline-block;
+  margin-bottom: 26px;
+  color: #fff;
+  font-size: 21px;
+  text-decoration: none;
+}
+.forgot:hover { text-decoration: underline; }
+
+.box h2 {
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 41px;
+  color: #fff;
+}
+
+@media (max-width: 560px) {
+  .box { padding: 24px 22px 32px; }
+}

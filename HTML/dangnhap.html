@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="../CSS/dang-nhap.css">
+        <script src="../JV/include.js" crossorigin="anonymous"></script>
+        <script src="../JV/style.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div data-include="Thành phần/header.html"></div>
+
+        <!-- Đăng nhập -->
+        <div class="login">
+            <form class="box" action="#" method="post">
+                <h2>Đăng nhập</h2>
+                <div class="field">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="field">
+                    <input type="password" name="password" placeholder="Mật khẩu" required>
+                    <span class="eye">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </span>
+                </div>
+                <button class="btn" type="submit">Đăng nhập</button>
+                <a class="forgot" href="quen-mat-khau.html">Quên mật khẩu</a>
+                <hr>
+                <h2>Đăng ký</h2>
+                <a class="btn" href="dangky.html">Tạo tài khoản</a>
+                <a class="btn last" href="trangchu.html">Quay về trang chủ</a>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div data-include="Thành phần/footer.html"></div>
+    </body>
+</html>
